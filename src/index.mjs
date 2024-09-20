@@ -75,7 +75,7 @@ async function lerArquivo() {
   const workbook = xlsx.readFile(filePath);
 
   // Obtém a planilha 'respostas'
-  const nomePlanilha = "Respostas";
+  const nomePlanilha = "PERFIS";
   if (!workbook.SheetNames.includes(nomePlanilha)) {
     throw new Error(`A planilha "${nomePlanilha}" não existe no arquivo.`);
   }
